@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/nkrus/gitlab-feature-flags-gitops.git
+git remote add origin https://gitlab.com/nkrus/gitlab-flagman.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/nkrus/gitlab-feature-flags-gitops/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/nkrus/gitlab-flagman/-/settings/integrations)
 
 ## Collaborate with your team
 

@@ -1,0 +1,248 @@
+- name: new_feature1
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+
+- name: beta_feature
+  description: Beta testing feature
+  active: false
+  strategies:
+    - name: userWithId
+      parameters:
+        userIds: "1,2,3"
+      scopes:
+        - environment_scope: staging
+          active: true
+        - environment_scope: production
+          active: false
+
+- name: debug_mode
+  description: Enable debug mode
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: true
+
+- name: new_ui
+  description: Enable new UI
+  active: false
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: false
+        - environment_scope: staging
+          active: true
+
+- name: fast_login
+  description: Enable fast login
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: true
+
+- name: new_feature2
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature3
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature4
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature5
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature6
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature7
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature8
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature9
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature10
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature11
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature12
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature13
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature14
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature15
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature16
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false
+- name: new_feature17
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false   
+- name: new_feature18
+  description: Enable the new feature
+  active: true
+  strategies:
+    - name: default
+      parameters: {}
+      scopes:
+        - environment_scope: PROD
+          active: true
+        - environment_scope: staging
+          active: false   
