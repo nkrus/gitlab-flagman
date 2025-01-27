@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nkrus/gitlab-flagman/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/nkrus/gitlab-flagman/config"
 )
 
 func TestGetExistingFeatureFlags(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.com/nkrus/gitlab-flagman/config"
+	"github.com/nkrus/gitlab-flagman/config"
 )
 
 type GitLabClient struct {

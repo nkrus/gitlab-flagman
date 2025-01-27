@@ -1,4 +1,4 @@
-module gitlab.com/nkrus/gitlab-flagman
+module github.com/nkrus/gitlab-flagman
 
 go 1.23.4
 

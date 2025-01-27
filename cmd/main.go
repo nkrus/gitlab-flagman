@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"gitlab.com/nkrus/gitlab-flagman/config"
-	"gitlab.com/nkrus/gitlab-flagman/internal/args"
-	"gitlab.com/nkrus/gitlab-flagman/internal/client"
-	"gitlab.com/nkrus/gitlab-flagman/internal/service"
+	"github.com/nkrus/gitlab-flagman/config"
+	"github.com/nkrus/gitlab-flagman/internal/args"
+	"github.com/nkrus/gitlab-flagman/internal/client"
+	"github.com/nkrus/gitlab-flagman/internal/service"
 )
 
 func main() {

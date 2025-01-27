@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	"gitlab.com/nkrus/gitlab-flagman/config"
-	"gitlab.com/nkrus/gitlab-flagman/internal/client"
+	"github.com/nkrus/gitlab-flagman/config"
+	"github.com/nkrus/gitlab-flagman/internal/client"
 )
 
 const maxConcurrency = 5
