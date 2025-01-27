@@ -38,7 +38,10 @@ func TestGetExistingFeatureFlags(t *testing.T) {
 			w.Header().Set(xTotalHeader, "4")
 			w.Header().Set("Content-Type", "application/json")
 			w.WriteHeader(http.StatusOK)
-			w.Write(respBytes)
+			_, err = w.Write(respBytes)
+			if err != nil {
+				t.Fatalf("Failed to write response: %v", err)
+			}
 		case "page=2&per_page=2":
 			respBytes, err := json.Marshal(flags[2:])
 			if err != nil {
@@ -52,7 +55,10 @@ func TestGetExistingFeatureFlags(t *testing.T) {
 			w.Header().Set(xTotalHeader, "4")
 			w.Header().Set("Content-Type", "application/json")
 			w.WriteHeader(http.StatusOK)
-			w.Write(respBytes)
+			_, err = w.Write(respBytes)
+			if err != nil {
+				t.Fatalf("Failed to write response: %v", err)
+			}
 		}
 	}))
 	defer server.Close()
@@ -117,7 +123,8 @@ func TestGetExistingFeatureFlags(t *testing.T) {
 		server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.Header().Set("Content-Type", "application/json")
 			w.WriteHeader(http.StatusOK)
-			w.Write([]byte("{ invalid-json }"))
+			_, err := w.Write([]byte("{ invalid-json }"))
+			require.NoError(t, err)
 		}))
 		defer server.Close()
 

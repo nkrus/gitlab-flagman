@@ -5,6 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestParseArgs(t *testing.T) {
@@ -50,7 +51,8 @@ func TestParseArgs(t *testing.T) {
 			resetFlags(t)
 			RegisterFlags()
 			for key, value := range tc.flags {
-				flag.Set(key, value)
+				err := flag.Set(key, value)
+				require.NoError(t, err)
 			}
 
 			parsedArgs, err := ParseArgs()
