@@ -1,8 +1,8 @@
 ![logo](logo.png)
 # gitlab-flagman - GitOps feature toggle for Gitlab
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/<your-username>/<your-repository>)](https://goreportcard.com/report/github.com/<your-username>/<your-repository>)
-[![Build Status](https://github.com/<your-username>/<your-repository>/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/<your-repository>/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nkrus/gitlab-flagman)](https://goreportcard.com/report/github.com/nkrus/gitlab-flagman)
+[![Build Status](https://github.com/nkrus/gitlab-flagman/actions/workflows/ci.yml/badge.svg)](https://github.com/nkrus/gitlab-flagman/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 gitlab-flagman is a command line tool for managing feature flags in GitLab using a GitOps approach. It allows you to conveniently manage flags through configuration files and automatically sync changes with GitLab.
