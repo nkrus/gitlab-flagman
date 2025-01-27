@@ -1,8 +1,6 @@
+![logo](logo.png)
 # gitlab-flagman - GitOps feature toggle for Gitlab
 
-```bash
-go run cmd/main.go -flagsFile=feature_flags.yaml -gitLabBase=https://gitlab.com/api/v4 -gitLabToken=YOUR_TOKEN -gitLabProjectID=YOUR_PROJECT_ID
-```
 gitlab-flagman is a command line tool for managing feature flags in GitLab using a GitOps approach. It allows you to conveniently manage flags through configuration files and automatically sync changes with GitLab.
 
 ## Key Features
@@ -51,6 +49,10 @@ Alternatively, specify the parameters manually:
 
 ```bash
 make run_p
+```
+
+```bash
+go run cmd/main.go -flagsFile=feature_flags.yaml -gitLabBase=https://gitlab.com/api/v4 -gitLabToken=YOUR_TOKEN -gitLabProjectID=YOUR_PROJECT_ID
 ```
 
 Ensure you set the required environment variables to interact with GitLab:
