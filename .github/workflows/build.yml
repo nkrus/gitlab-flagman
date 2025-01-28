@@ -1,5 +1,5 @@
 ---
-name: CI Pipeline
+name: Build
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -22,13 +22,16 @@ jobs:
         id: go
 
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: go mod tidy
 
-      - name: Run Linter
+      - name: Linter
         run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest && golangci-lint run
 
-      - name: Run Tests
+      - name: Tests
         run: go test ./...
+      
+      - name: Build
+        run: make build
