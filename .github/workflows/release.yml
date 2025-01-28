@@ -1,5 +1,5 @@
 ---
-name:
+name: Release
 
 on:
   repository_dispatch:
