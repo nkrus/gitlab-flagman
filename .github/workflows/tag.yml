@@ -58,3 +58,4 @@ jobs:
 
           event-type: publish-event
           client-payload: '{"new-tag": "${{ steps.bump-semver.outputs.new_version }}", "release-notes": "${{ steps.regex-match.outputs.group1 }}"}'
+          
